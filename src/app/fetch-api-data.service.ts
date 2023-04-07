@@ -9,7 +9,7 @@ import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 // Declaring API URL that will provide data for the client app
-const apiUrl = 'https://myFlix-Angular-client.herokuapp.com/';
+const apiUrl = 'https://datenightmovies.herokuapp.com';
 @Injectable({ providedIn: 'root' })
 export class FetchApiDataService {
   constructor(private http: HttpClient) {}
@@ -42,11 +42,11 @@ export class FetchApiDataService {
       .pipe(map(this.extractResponseData), catchError(this.handleError));
   }
 
-  // get a JSON object of a single movie
-  getMovie(title: string): Observable<any> {
+  // get a JSON object of a single movie by _id
+  getMovieById(_id: string): Observable<any> {
     const token = localStorage.getItem('token');
     return this.http
-      .get(`${apiUrl}/movies/${title}`, {
+      .get(`${apiUrl}/movies/${_id}`, {
         headers: new HttpHeaders({
           Authorization: 'Bearer ' + token,
         }),

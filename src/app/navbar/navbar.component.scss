@@ -1,0 +1,37 @@
+$backgroundColor: #0f120eec;
+$cardColor: #1a1d1ad2;
+$textColor: #fff;
+$buttonMainColor: #0f9152;
+$textSubtitleColor: #cbcaca;
+$boxShadowColor: #4c4c4cef;
+
+$bg-gradient: linear-gradient(hsla(0, 25%, 46%, 0.959) 50%, hsl(180, 54%, 54%));
+
+.top-title,
+.nav-spacer {
+  color: rgba(255, 0, 0, 0.886);
+  border-bottom: 1px solid hsl(0, 9%, 9%);
+  text-shadow: 1px 1px black;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.nav-bar {
+  background: rgb(203, 205, 204);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #915f5f;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav-spacer {
+  visibility: hidden;
+}
+
+.logout-button {
+  color: #555 !important;
+  position: fixed;
+  right: 10px;
+}

@@ -1,0 +1,26 @@
+$backgroundColor: #0f120eec;
+$cardColor: #1a1d1ad2;
+$textColor: #fff;
+$buttonMainColor: #0f9152;
+$textSubtitleColor: #cbcaca;
+$boxShadowColor: #4c4c4cef;
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mat-mdc-form-field {
+  display: block;
+}
+
+button {
+  width: 70%;
+  margin-bottom: 1.5em;
+}
+
+.login-button {
+  background-color: $buttonMainColor;
+}
